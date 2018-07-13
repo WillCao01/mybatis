@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapper">
+
+	<!-- 查询单个用户 -->
+	<select id="queryUserById" resultType="com.cw.mybatis.pojo.User">
+		select * from tb_user where id = #{id}
+	</select>
+
+</mapper>
